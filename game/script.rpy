@@ -1,33 +1,26 @@
-﻿# The script of the game goes in this file.
+﻿define bot = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
+define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+image ctc_blink:
+    xalign 0.96 yalign 0.95
+    "images/ctc_normal.png"
+    linear 0.5 alpha 1.0
+    "images/ctc_transparent.png"
+    linear 0.5 alpha 1.0
+    repeat
 
-define e = Character("Eileen")
+define flash = Fade(0.1, 0.0, 0.3, color="#fff")
 
 
-# The game starts here.
+image bg black_bg = "black_bg.png"
+
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene bg black_bg with fade
+    $ renpy.pause(1.0)
+    window show dissolve
 
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+    unknown "Today is the day."
+    unknown "I..."
     return
