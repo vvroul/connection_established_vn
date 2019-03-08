@@ -1,6 +1,4 @@
-﻿#define bgs
-
-#define characters
+﻿#define characters
 define bot = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed")  #cherry blossom, beautiful
@@ -21,13 +19,14 @@ image ctc_blink:
 
 define flash = Fade(0.1, 0.0, 0.3, color="#fff")
 
-
+#define bgs
 image bg black_bg = "black_bg.png"
+image bg internet_bg = "background_internet.png"
 
 
 label start:
 
-    scene bg black_bg with fade
+    scene bg internet_bg with fade
     $ renpy.pause(1.0)
     window show dissolve
 
@@ -35,9 +34,9 @@ label start:
     unknown "I..."
     "You know what to do right?"
     "Unless you want us to repeat the mission again."
-    "No, sir. Everything's clear."
+    unknown "No, sir. Everything's clear."
     "Good. Now...go. Do not dissapoint us."
-    "Yes, sir."
+    unknown "Yes, sir."
     scene black with Pause(1)
     $ renpy.pause(1, hard=True)
     unknown "I haven't been in this planet since the Initial Incident."
