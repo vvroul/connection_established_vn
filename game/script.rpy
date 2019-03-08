@@ -1,6 +1,7 @@
 ﻿#define characters
 define bot = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
+define mum = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
@@ -69,5 +70,22 @@ label start:
         "The camera thar captured the event reported that the man crashed all by himself..."
         "Dear God..."
         #closing tv
-        "Why did you turn that off?"
+        kage "Why did you turn that off?"
+        kage "Mum I am old enough to go through/ get along with dads death."
+        kage "Everything's going to be fine."
+        mum "Thank you, honey."
+        mum "So, I heard that your friends are going to the big battle show in a few hours. Why not go with them?"
+        kage "I don't know, I'll think about it."
+        mum "You want to study this technology in order to evolve right?"
+        kage "Seems like you knew this all along."
+        mum "Of course, I'm your mother. I can easily interpret your feelings."
+        menu : 
+            "Build a new machine." :
+                $no_thats_all = True
+                $miss_times_together = False
+            "Afraid of moving on." :
+                $miss_times_together = True
+                $no_thats_all = False
+
+                
     return
