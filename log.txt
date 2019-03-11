@@ -1,35 +1,36 @@
-Fri Mar 08 07:03:39 2019
+Sun Mar 10 18:52:07 2019
 Windows-8-6.2.9200
 Ren'Py 7.2.0.424
  
 
 Bootstrap to the start of init.init took 0.09s
-Early init took 0.01s
+Early init took 0.00s
 Loader init took 0.04s
-Loading error handling took 0.03s
-Loading script took 0.12s
-Loading save slot metadata. took 0.02s
+Loading error handling took 0.27s
+Loading script took 0.39s
+Loading save slot metadata. took 0.29s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
-Loading analysis data took 0.04s
+Running init code took 0.20s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.08s
+Backing up script files to 'C:\\Users\\USER\\AppData\\Roaming/RenPy/backups\\Connection Established':
+Dump and make backups. took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
 DPI scale factor: 1.250000
-Creating interface object took 0.04s
+Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.07s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.11s
+Prepare screens took 0.11s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.10s
+Save bytecode. took 0.11s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -37,7 +38,7 @@ Interface start took 0.02s
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1738, 977) drawable=(1738, 977)
+Screen sizes: virtual=(1280, 720) physical=(1736, 976) drawable=(1736, 976)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 520'
 Version: '4.5.0 - Build 23.20.16.4973'
@@ -279,14 +280,14 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 2.10500001907s
+Total time until interface ready: 3.36000013351s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016000 seconds.
-- Frame drawn at 0.032000 seconds.
-- Frame drawn at 0.048000 seconds.
-- Frame drawn at 0.064000 seconds.
-- 0.064000 seconds to render 5 frames.
+- Frame drawn at 0.020667 seconds.
+- Frame drawn at 0.025667 seconds.
+- Frame drawn at 0.049667 seconds.
+- Frame drawn at 0.117666 seconds.
+- 0.117666 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.16s
 Build styles took 0.01s
