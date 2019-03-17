@@ -2,12 +2,12 @@
 define bot = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
-define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed")  #cherry blossom, beautiful
+define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
 define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed")  #powerful like a mountain
 define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed") #shadow
-define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed", image = "images/mio.png")
+define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 
 
 image ctc_blink:
@@ -22,7 +22,11 @@ define flash = Fade(0.1, 0.0, 0.3, color="#fff")
 
 #define bgs
 image bg black_bg = "black_bg.png"
+image bg dino_bg = "dino.png"
+image bg home_bg = "home.png"
 image bg internet_bg = "background_internet.png"
+
+image side mio = "mio.png"
 
 
 label start:
@@ -40,13 +44,16 @@ label start:
     unknown "Yes, sir."
     scene black with Pause(1)
     $ renpy.pause(1, hard=True)
+    scene bg dino_bg with fade
+    $ renpy.pause(1.0)
+    window show dissolve
     unknown "I haven't been in this planet since the Initial Incident."
-    #show mecha dinosaur image
     unknown "Their systems seem to work just fine. Maybe better than ours."
     unknown "So, they need three of them. Let's hope this will work."
-    scene black with Pause(1)
     $ renpy.pause(1, hard=True)
-    #show the technolyzed backdround
+    scene bg home_bg with fade
+    $ renpy.pause(1.0)
+    window show dissolve
     #dring dring
     mio "Hello I'm Mio, Kana's friend, is she at home?"
     ai "Hello. Unfortunately, she left an hour ago. Would you like to deliver a message for her?" #ai
@@ -125,7 +132,8 @@ label start:
 
 
     label timeForShow : 
-        "Bet he's not coming after all."
-        "Wait!!"
+        gou "Bet he's not coming after all."
+        aki "Wait!!"
+        aki ""
 
     return
