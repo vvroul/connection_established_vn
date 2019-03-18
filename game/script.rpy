@@ -134,6 +134,82 @@ label start:
     label timeForShow : 
         gou "Bet he's not coming after all."
         aki "Wait!!"
-        aki ""
+        aki "He called me and said he'll be here in a minute."
+        gou "Well 10 minutes have passed and he's nowhere to be seen." 
+        gou "I'm going in either way, catch you later."
+        menu : 
+            "Gou goes inside." :
+                jump gou_inside
+                $gou_in = True
+                $gou_out = False
+            "Gou waits for Kage" :
+                jump gou_wait
+                $gou_out = True
+                $gou_in = False
+
+        kana "That Gou, always getting on my nerves with his lack of persistence."
+        mio  "I'm really happy she's beside us, wonder if the AI managed to deliver my call."
+        kana "Hey, Mio, you know..."
+        aki  "Is that Kage over there? That running thing?" 
+        #Grunts
+        kage "Yo, guys, thanks a lot for waiting."
+        #if gou inside or out
+        kana "You're late."
+        kage "I know. I'll explain later, let's not waste our time."
+
+        #gou, eventhough he went inside, he was up for some investigation because 
+        #something was strange for him, no one was inside. No one was waiting for 
+        #this Big Battle Dinosaur event. When he finished with investigastion, 
+        #kage and the others entered the scene.
+
+        #inside if gou went in or not.
+        mio "Huh seems like we're the first getting here."
+        aki "That's weird."
+        kana "Uh?"
+        aki  "3000 tickets were listed as closed on the website. Doubt they're all coming at the last minute."
+        unknown "Hi and welcome to the Big Dinosaur Battle"
+        kana "Ohhh boy, here it goes."
+        unknown "The first Technolized battle event between two advanced mecha beasts developed by the biggest tech company in our universe..."
+        Does this company even have a name?
+        "Technoland"
+        Oh didn't remember mentioning this on site.
+        Aaand now behold the two beasts, don't be afraid as they're trained to not to attack Technolized humans like us. 
+        Gou, I'm scared.
+        Don't mind Kana, it's gonna be alright. If gou was inside before then he has a plan for escape later.
+
+
+
+        #show beasts
+        ? And now, get prepared for some fight. 
+        lights off. 
+        3...2...
+        poof.
+        ? Or.
+        ? Not.
+        kn What happened? Gou?
+        g Yeah, something's not right.
+        a Well, those dinosaurs don't seem that amazing as we expected.
+        k Guess you're right, but...aren't they too close to us?
+        ? That's because I'm controlling them now.
+        ? If I order an attack the will immediatelly come to you.
+        m And who exactly are you?
+        n I'm not from your race. 
+        a What do you want from us?
+        n I've heard you guys are among the most intelligent technolized troops.
+        n So, therfe you have it, that's all I need. Or should I say we need.
+        n Your brains. 
+        kn You're just trying to scare us, aren't you? I'm not fallin for this trick.
+        kn I'm getting out of this place.
+        m "Kana..."
+        kn "Uhh..."
+        n "Hm."
+        kn "The...there's no exit."
+        k "Is this one of your tricks? Networker?"
+        n I've closed all the exits with a magic barrier. Although, there are two ways for you to escape. One is to obtain an anti wired beam ability which even our race doesn't possess. So, you have only
+
+
+
+        #insidr
+
 
     return
