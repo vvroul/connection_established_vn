@@ -1,7 +1,7 @@
 ﻿#define characters
-define bot = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
+define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
-define mum = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
+define mum = Character("Kage's mum", ctc="ctc_blink", ctc_position="fixed")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
@@ -170,46 +170,41 @@ label start:
         unknown "Hi and welcome to the Big Dinosaur Battle"
         kana "Ohhh boy, here it goes."
         unknown "The first Technolized battle event between two advanced mecha beasts developed by the biggest tech company in our universe..."
-        Does this company even have a name?
-        "Technoland"
-        Oh didn't remember mentioning this on site.
-        Aaand now behold the two beasts, don't be afraid as they're trained to not to attack Technolized humans like us. 
-        Gou, I'm scared.
-        Don't mind Kana, it's gonna be alright. If gou was inside before then he has a plan for escape later.
-
-
-
+        aki "Does this company even have a name?"
+        unknown "...Technoland"
+        aki "Oh didn't remember mentioning this on site."
+        unknown "And now behold the two beasts, don't be afraid as they're trained not to attack Technolized humans like us." 
+        kana "Gou, I'm scared."
+        #If gou was inside before then he has a plan for escape later."
+        gou "Don't mind Kana, it's gonna be alright." 
         #show beasts
-        ? And now, get prepared for some fight. 
-        lights off. 
-        3...2...
-        poof.
-        ? Or.
-        ? Not.
-        kn What happened? Gou?
-        g Yeah, something's not right.
-        a Well, those dinosaurs don't seem that amazing as we expected.
-        k Guess you're right, but...aren't they too close to us?
-        ? That's because I'm controlling them now.
-        ? If I order an attack the will immediatelly come to you.
-        m And who exactly are you?
-        n I'm not from your race. 
-        a What do you want from us?
-        n I've heard you guys are among the most intelligent technolized troops.
-        n So, therfe you have it, that's all I need. Or should I say we need.
-        n Your brains. 
-        kn You're just trying to scare us, aren't you? I'm not fallin for this trick.
-        kn I'm getting out of this place.
-        m "Kana..."
-        kn "Uhh..."
-        n "Hm."
-        kn "The...there's no exit."
-        k "Is this one of your tricks? Networker?"
-        n I've closed all the exits with a magic barrier. Although, there are two ways for you to escape. One is to obtain an anti wired beam ability which even our race doesn't possess. So, you have only
-
-
-
-        #insidr
+        unknown "And now, get prepared for some fight." 
+        #lights off. 
+        unknown "3...2..."
+        #poof.
+        unknown "Or."
+        unknown "Not."
+        kana "What happened?"
+        kage "Something's not right."
+        aki "Well, those dinosaurs aren't that amazing as we expected."
+        kage "Guess you're right, but...aren't they too close to us?"
+        unknown "That's because I'm controlling them now."
+        unknown "If I order an attack they will immediatelly come for you."
+        mio "And who exactly are you?"
+        networker "I'm not from your race." 
+        gou "What do you want from us?"
+        networker "I've heard you guys are among the most intelligent technolized troops."
+        networker "They need..."
+        networker "Your brains." 
+        kana "You're just trying to scare us, aren't you? I'm not fallin for this trick."
+        kana "I'm getting out of this place."
+        mio "Kana..."
+        kana "Uhh..."
+        networker "Hm."
+        kana "The...there's no exit."
+        #if gou was inside
+        gou "Is this one of your tricks? Networker?"
+        networker "I've closed all the exits with a magic barrier. Although, there are two ways for you to escape. One is to obtain an anti wired beam ability which even our race doesn't possess. So, you have only"
 
 
     return
