@@ -204,7 +204,21 @@ label start:
         kana "The...there's no exit."
         #if gou was inside
         gou "Is this one of your tricks? Networker?"
-        networker "I've closed all the exits with a magic barrier. Although, there are two ways for you to escape. One is to obtain an anti wired beam ability which even our race doesn't possess. So, you have only"
+        networker "I've closed all the exits with a magic barrier."
+        networker "The only way to break it's to solve a puzzle."
+        networker "One of your friends is already captured. In order to identify who it is..."
+        networker "You should kill him."
+        mio "Whaaaaaat?!!"
+        kage "No way..."
+        kana "This is nonsense!! I'm not killing anyone!"
+        aki "Kana is right, we have to find another method to break the barrier."
+        gou "You should relax guys. If this weirdo wants us to play this game, we'll play it."
+        kana "Weirdo, you should call yourself for telling us to kill each other."
+        kana "What if he's lying and none of us is fake."
+        mio "Kana...I always agree with what you think but now...you're wrong."
+        kana "How am I wrong?"
+        aki "Hm"
+        kage "Aki...what do you say?"
 
 
     return
