@@ -1,7 +1,7 @@
 ﻿#define characters
 define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
-define mum = Character("Kage's mum", ctc="ctc_blink", ctc_position="fixed")
+define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
@@ -9,7 +9,7 @@ define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed")  #powerful 
 define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed") #shadow
 define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 
-
+#define effects
 image ctc_blink:
     xalign 0.96 yalign 0.95
     "images/ctc_normal.png"
@@ -26,15 +26,13 @@ image bg dino_bg = "dino.png"
 image bg home_bg = "home.png"
 image bg internet_bg = "background_internet.png"
 
+#define side images
 image side mio = "mio.png"
 
-
 label start:
-
     scene bg internet_bg with fade
     $ renpy.pause(1.0)
     window show dissolve
-
     unknown "Today is the day."
     unknown "I..."
     "You know what to do right?"
@@ -54,11 +52,10 @@ label start:
     scene bg home_bg with fade
     $ renpy.pause(1.0)
     window show dissolve
-    #dring dring
     mio "Hello I'm Mio, Kana's friend, is she at home?"
     ai "Hello. Unfortunately, she left an hour ago. Would you like to deliver a message for her?" #ai
     mio "Oh I see."
-    mio "Yes, please tell her that we have an extra ticket for the {color=#FE2E64} Epic Dinosaur Battle {/color} tonight, so she can join us." #with color
+    mio "Yes, please tell her that we have an extra ticket for the {color=#FE2E64} Epic Dinosaur Battle {/color} tonight, so she can join us."
     mio "Gou is coming also and he's taking his camera with him."
     ai "Message saved. Anything else you want?"
     menu : 
@@ -69,10 +66,8 @@ label start:
             $miss_times_together = True
             $no_thats_all = False
     ai "Alright, closing the call in 3...2..."
-    #call closed sound
     mio "Hope she'll come tonight."
     jump tv_news
-
 
     label tv_news :
         scene black with Pause(1)
@@ -80,17 +75,16 @@ label start:
         "A dead body was found yesterday in a car accident."
         "The camera which captured the event reported that the man crashed all by himself..."
         "Dear God Danny..."
-        #closing tv
         kage "Hey, why did you turn that off?"
         mum  "..."
         kage "Mum, I am old enough to compromise with dad's death."
         kage "Everything's going to be fine."
         mum "Thank you, honey, you've really grown up. I'm proud of you."
         mum "So, I heard that your friends are going to the big battle show in a few minutes. Why don't you go with them?"
-        kage "I don't know, Let me think about it."
+        kage "I don't know..."
         mum "You're really interested in this technology, right?"
-        kage "Seems like you knew this all along."
-        mum "Of course, I'm your mother. I can easily interpret your feelings."
+        kage "How do you..."
+        mum "I'm your mother. I can easily tell."
         menu : 
             "Build a new machine." :
                 jump buildMachine
@@ -102,123 +96,101 @@ label start:
         kage "It's so intriguing..."
         kage "I'm going!"
         mum "Better run, honey."
-        kage "Oh, crap! See ya, mum. Thank you!"
+        kage "Oh, you're right! See ya, mum. Thank you!"
         mum "Kage..."
         kage "What now?"
         mum "I love you."
-        kage "Me too mum. Me too."
+        kage "Me too mum. Me too..."
         jump timeForShow
 
-
     label afraidMoving : 
-        kage "Mum. You're right I really want to invest on this feature."
-        kage "But, I'm afraid I'll fail miserably. I mean there are so many people behind this ongoing project."
-        kage "There's no way I'm going to succeed by myself. I..."
+        kage "I really want to invest time on this feature."
+        kage "But, I'm afraid I'll fail miserably."
+        kage "There's no way I'm going to succeed all by myself. I..."
         mum  "What about asking for Aki's help?"
         kage "Aki...why Aki's she's not into machines."
         mum  "Oh really? Then, how do you explain this?"
-        #show a phot of Aki with a flyer
         kage "Had no idea...This changes evetything."
         kage "Have to find her, do you know if she's also going to the show?"
         mum  "Only one way to know."
         kage "I'm going!"
         mum "Better run, honey."
-        kage "Oh, crap! See ya, mum. Thank you!"
+        kage "See ya, mum. Thank you!"
         mum "Kage..."
         kage "What now?"
         mum "I love you."
-        kage "Me too mum. Me too."
+        kage "Me too mum. Me too..."
         jump timeForShow
 
 
     label timeForShow : 
         gou "Bet he's not coming after all."
-        aki "Wait!!"
+        aki "Wait!"
         aki "He called me and said he'll be here in a minute."
         gou "Well 10 minutes have passed and he's nowhere to be seen." 
         gou "I'm going in either way, catch you later."
-        menu : 
-            "Gou goes inside." :
-                jump gou_inside
-                $gou_in = True
-                $gou_out = False
-            "Gou waits for Kage" :
-                jump gou_wait
-                $gou_out = True
-                $gou_in = False
-
         kana "That Gou, always getting on my nerves with his lack of persistence."
         mio  "I'm really happy she's beside us, wonder if the AI managed to deliver my call."
         kana "Hey, Mio, you know..."
-        aki  "Is that Kage over there? That running thing?" 
-        #Grunts
-        kage "Yo, guys, thanks a lot for waiting."
-        #if gou inside or out
+        aki  "Is that Kage over there?" 
+        kage "Hey, guys, thanks a lot for waiting."
         kana "You're late."
         kage "I know. I'll explain later, let's not waste our time."
-
-        #gou, eventhough he went inside, he was up for some investigation because 
-        #something was strange for him, no one was inside. No one was waiting for 
-        #this Big Battle Dinosaur event. When he finished with investigastion, 
-        #kage and the others entered the scene.
-
-        #inside if gou went in or not.
-        mio "Huh seems like we're the first getting here."
+        mio "Huh, seems like we're the first getting here."
         aki "That's weird."
-        kana "Uh?"
-        aki  "3000 tickets were listed as closed on the website. Doubt they're all coming at the last minute."
+        aki  "3000 tickets were listed as closed."
+        unknown "..."
         unknown "Hi and welcome to the Big Dinosaur Battle"
-        kana "Ohhh boy, here it goes."
+        kana "Here it goes."
         unknown "The first Technolized battle event between two advanced mecha beasts developed by the biggest tech company in our universe..."
-        aki "Does this company even have a name?"
-        unknown "...Technoland"
-        aki "Oh didn't remember mentioning this on site."
-        unknown "And now behold the two beasts, don't be afraid as they're trained not to attack Technolized humans like us." 
+        unknown "Don't be afraid as they're trained not to attack anyone else than their opponent." 
         kana "Gou, I'm scared."
-        #If gou was inside before then he has a plan for escape later."
         gou "Don't mind Kana, it's gonna be alright." 
         #show beasts
         unknown "And now, get prepared for some fight." 
         #lights off. 
         unknown "3...2..."
-        #poof.
         unknown "Or."
         unknown "Not."
         kana "What happened?"
         kage "Something's not right."
         aki "Well, those dinosaurs aren't that amazing as we expected."
-        kage "Guess you're right, but...aren't they too close to us?"
         unknown "That's because I'm controlling them now."
         unknown "If I order an attack they will immediatelly come for you."
-        mio "And who exactly are you?"
-        networker "I'm not from your race." 
-        gou "What do you want from us?"
+        gou "And why should we care about that?"
+        networker "I'm not from your race."
         networker "I've heard you guys are among the most intelligent technolized troops."
-        networker "They need..."
+        networker "I need..."
         networker "Your brains." 
-        kana "You're just trying to scare us, aren't you? I'm not fallin for this trick."
+        kana "You're just trying to scare us, aren't you? I'm not fallin for this."
         kana "I'm getting out of this place."
         mio "Kana..."
-        kana "Uhh..."
+        kana "Uh..."
         networker "Hm."
         kana "The...there's no exit."
-        #if gou was inside
         gou "Is this one of your tricks? Networker?"
         networker "I've closed all the exits with a magic barrier."
-        networker "The only way to break it's to solve a puzzle."
+        networker "The only way to break it, is to solve a puzzle."
         networker "One of your friends is already captured. In order to identify who it is..."
         networker "You should kill him."
         mio "Whaaaaaat?!!"
         kage "No way..."
         kana "This is nonsense!! I'm not killing anyone!"
-        aki "Kana is right, we have to find another method to break the barrier."
+        kage "Kana is right, we have to find another method to break the barrier."
         gou "You should relax guys. If this weirdo wants us to play this game, we'll play it."
         kana "Weirdo, you should call yourself for telling us to kill each other."
         kana "What if he's lying and none of us is fake."
         mio "Kana...I always agree with what you think but now...you're wrong."
         kana "How am I wrong?"
+        mio "There's clearly a fake..."
         aki "Hm"
         kage "Aki...what do you say?"
-
+        aki "Πρέπει να το συζητήσουμε..."
+        aki "Από την οπτική μου γωνία, υπάρχουν τουλάχιστον τρεις περιπτώσεις που μπορεί ισχύει κάτι τέτοιο."
+        menu : 
+            "Kage was late." :
+                jump buildMachine
+            "Afraid of moving on." :
+                jump afraidMoving
 
     return
