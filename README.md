@@ -1,2 +1,2 @@
 # connection_established_vn
-Visual Novel Participation for NaNoRenO2019
+Visual Novel about a parallel universe story
