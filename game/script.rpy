@@ -54,20 +54,20 @@ label start:
     $ renpy.pause(1.0)
     window show dissolve
     mio "Good morning, I'm Mio, Kana's friend. Is she home?"
-    ai "Hello. Unfortunately, she left an hour ago. Would you like to leave a message for her?"
+    ai "Hello Mio. Unfortunately, she left an hour ago. Would you like to leave a message for her?"
     mio "Oh, I see."
-    mio "Yes, please tell her that we have an extra ticket for the {color=#FE2E64} Epic Dinosaur Battle {/color} tonight, so she can join us."
-    mio "Also, Gou coming and he's taking his camera with him."
-    ai "Message saved. Anything else you'd like?"
+    mio "Yes please, tell her we have an extra ticket for the {color=#FE2E64} Epic Dinosaur Battle {/color} tonight, so she can join us."
+    mio "Also, Gou's coming too and he's taking his camera with him."
+    ai "Call recorded. Anything else you'd like?"
     menu : 
-        "No, that's all." :
+        "No, that's all. Thank you." :
             $no_thats_all = True
             $miss_times_together = False
-        "I really miss the days we were having fun together." :
+        "Yes..I... I really miss the days we were having fun together." :
             $miss_times_together = True
             $no_thats_all = False
-    ai "Alright, closing the call in 3...2..."
-    mio "Hope she'll come tonight."
+    ai "Alright, ending the call in 3...2..."
+    mio "Hope she'll come tonight..."
     jump tv_news
 
     label tv_news :
@@ -79,13 +79,13 @@ label start:
         "*blink*"
         kage "Hey wait, why did you turn that off?"
         mum  "..."
-        kage "Mum, I am old enough for this joke again..."
+        kage "Mum. Not this again. I'm old enough for this."
         kage "Everything's going to be fine."
         mum "Thank you honey. I'm proud of you."
-        mum "I heard that your friends are going to the big battle show in a few minutes."
-        mum "Why don't you go with them?"
-        kage "I don't know. I have a bad feeling about this."
-        mum "You're really interested in this technology, right?"
+        mum "I heard that your friends are going to the big battle show today."
+        mum "Why don't you join them?"
+        kage "I don't know. I have a feeling this will be really boring."
+        mum "You're really interested in this technology, are you?"
         kage "Yeah, how do you..."
         mum "I'm your mother. I can easily tell."
         menu : 
@@ -147,12 +147,12 @@ label start:
         unknown "The first Technolized battle event between two advanced mecha beasts developed by the biggest tech company in our universe..."
         unknown "Don't be afraid as they're trained not to attack anyone else than their opponent." 
         kana "Gou, I'm scared."
-        gou "Don't mind Kana, it's gonna be alright." 
+        gou "Don't be afraid Kana, it's gonna be alright." 
         #show beasts
         unknown "And now, get prepared for some fight." 
         #lights off. 
         unknown "3...2..."
-        unknown "Or."
+        unknown "Or..."
         unknown "Not."
         kana "What happened?"
         kage "Something's not right."
@@ -162,7 +162,7 @@ label start:
         gou "And why should we care about that?"
         networker "I'm not one of your race."
         networker "I've heard you guys are amongst the most intelligent technolized."
-        networker "I need...I mean...they need"
+        networker "I need...I mean...they need..."
         networker "Your brains." 
         kana "You're just trying to scare us, aren't you? I'm not falling for this."
         kana "I'm getting out of this place."
@@ -193,13 +193,14 @@ label start:
                 jump kageLate
             "Gou went inside before Kage arrived." :
                 jump gouInside
-            "I searched the area."
+            "I searched the area." : 
                 jump akiSearched
 
         #blamed kage first cause late but aki image, then aki for being fake but was her robot
         #then gou because he went inside and might was captured
 
         label kageLate : 
+			#starting to blame Kage
             aki "Kage..."
             aki "We all know you were late to come to our meeting place, about 45 minutes."
             kana "Indeed, Kage was really late! He is the fake one!"
@@ -219,13 +220,14 @@ label start:
             kana "Here's where you are wrong Kage. It couldn't have been the fake, and I can prove to you why."
             networker "Seems like I have underestimated them. Already came up with more arguments than I expected."
             kana "I also know about Aki's occupation you mentioned with her robot. In fact, I was with her when she was starting to develop it."
-            kana "That day, she put the robot in ofline mode while she wanted to upgrade a major part of it."
+            kana "That day, she put the robot in offline mode while she wanted to upgrade a major part of it."
             kana "The upgrading was complete until yesterday and today the robot could move into the streets and interact with anyone."
             kana "Oh, and forgot to mention...the robot is more or less an Aki's clone."
             gou "So you're saying that it's so technologically advanced that could talk to Kage without realizing himself?"
-            kana "Ask Aki. She has really done a great job."
+            kana "Ask Aki. She's really done a great job."
             kana "So your argument for the fake Aki is not valid."
             networker "..."
+			#starting to blame Gou
             aki "Gou..."
             aki "I believe you are the fake one. You entered the stage without waiting for Kage."
             aki "There is a great chance you got captured by Networker."
@@ -233,8 +235,24 @@ label start:
             gou "I don't understand."
             kage "..."
             aki "He told me before the show started, he saw you while he was coming here."
+			aki "So...anything to say about this?"
+			gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
+			gou "You know why?"
+			gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
+			gou "As you already noticed, no one other than us, was here, which was strange by itself."
+			gou "So I scanned this whole place and guess what I found...this guy..."
+			gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
+			gou "That's how he knows about us. And our minds."
+			kana "I can't believe this...this is unreal..."
+			kana "But I believe you Gou..."
+			kage "Yeah, me too."
+			aki "Mio?"
+			mio "...this guy must pay for his actions..."
+			#starting her own research
+			aki ""
 
         label gouInside :
+			#starting to blame Gou
             aki "Gou..."
             aki "I believe you are the fake one. You entered the stage without waiting for Kage."
             aki "There is a great chance you got captured by Networker."
@@ -242,5 +260,44 @@ label start:
             gou "I don't understand."
             kage "..."
             aki "He told me before the show started, he saw you while he was coming here."
+			gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
+			gou "You know why?"
+			gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
+			gou "As you already noticed, no one other than us, was here, which was strange by itself."
+			gou "So I scanned this whole place and guess what I found...this guy..."
+			gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
+			gou "That's how he knows about us. And our minds."
+			kana "I can't believe this...this is unreal..."
+			kana "But I believe you Gou..."
+			kage "Yeah, me too."
+			aki "Mio?"
+			mio "...this guy must pay for his actions..."
+			#starting to blame Kage
+			aki "Kage..."
+            aki "We all know you were late to come to our meeting place, about 45 minutes."
+            kana "Indeed, Kage was really late! He is the fake one!"
+            mio "The rest of us were here and waiting for him...it can't be..."
+            gou "Wait..."
+            gou "I also have a proposal, so let's not rush to quick conclusions."
+            kage "If you really think I'm the fake one, then we're all done."
+            mio "Mind explaining?"
+            kage "Aki. I understand your reasons, but after the conversation we had before, I didn't imagine you'd get suspicious."
+            kage "Initially, I wasn't sure whether I was going to watch the battle or not. But a specific photo changed my mind."
+            kage "This photo depicts Aki with a robot machine, most probably created by her."
+            kana "So what?"
+            kage "While I was getting out of my house and running to catch you guys up, I met Aki on the road..."
+            kage "And we talked about the robot she is developing and various other techniques on how one can simulate this battle."
+            mio "But... wait. Aki was here with us all the time."
+            kage "Yes...the fake one! That's why she blamed me first because she wants to get rid of us one by one..."
+            kana "Here's where you are wrong Kage. It couldn't have been the fake, and I can prove to you why."
+            networker "Seems like I have underestimated them. Already came up with more arguments than I expected."
+            kana "I also know about Aki's occupation you mentioned with her robot. In fact, I was with her when she was starting to develop it."
+            kana "That day, she put the robot in offline mode while she wanted to upgrade a major part of it."
+            kana "The upgrading was complete until yesterday and today the robot could move into the streets and interact with anyone."
+            kana "Oh, and forgot to mention...the robot is more or less an Aki's clone."
+            gou "So you're saying that it's so technologically advanced that could talk to Kage without realizing himself?"
+            kana "Ask Aki. She's really done a great job."
+            kana "So your argument for the fake Aki is not valid."
+            networker "..."
 
     return
