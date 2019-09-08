@@ -249,7 +249,19 @@ label start:
 			aki "Mio?"
 			mio "...this guy must pay for his actions..."
 			#starting her own research
-			aki ""
+			aki "There's something else I haven't yet mentioned."
+			aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
+			aki "But I was kind of worried when I saw it moving..."
+			aki "It followed a weird pathing which led to our country's most expensive equipment."
+			mio "I don't understand. What's the meaning of this?"
+			kage "Did you give it a specific command for that?"
+			aki "Yes..."
+			aki "To detect the nearest possible threat."
+			kana "Wait...this place is..."
+			gou "That's right."
+			aki "Right here..."
+			kage "Aki. (She's amazing!!!)"
+			aki "So I guess this location has to do with the reason we're trapped here."
 
 			jump blamingMio
 
@@ -312,14 +324,37 @@ label start:
 			aki "To detect the nearest possible threat."
 			kana "Wait...this place is..."
 			gou "That's right."
-			aki "Here..."
-			kage "Aki."
+			aki "Right here..."
+			kage "Aki. (She's amazing!!!)"
+			aki "So I guess this location has to do with the reason we're trapped here."
+			#revealing Mio
+			networker "Do you understand now? What they really want?"
+			networker "They want to attack your country from the inside"
+			networker "That's why I came here to take over your minds. Because you are the only ones that can operate these weapons correctly"
+			gou "And why you're telling us that? You are the bad guy in this situation."
+			networker "Well...not really? Am I right? MIO."
+			mio "..."
+			kana "Mio??!!"
+			
 
 
 			jump blamingMio
 
 		label akiSearched :
-			#starting her own researc
+			#starting her own research
+			aki "There's something else I haven't yet mentioned."
+			aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
+			aki "But I was kind of worried when I saw it moving..."
+			aki "It followed a weird pathing which led to our country's most expensive equipment."
+			mio "I don't understand. What's the meaning of this?"
+			kage "Did you give it a specific command for that?"
+			aki "Yes..."
+			aki "To detect the nearest possible threat."
+			kana "Wait...this place is..."
+			gou "That's right."
+			aki "Right here..."
+			kage "Aki. (She's amazing!!!)"
+			aki "So I guess this location has to do with the reason we're trapped here."
 			#starting to blame Kage
             aki "Kage..."
             aki "We all know you were late to come to our meeting place, about 45 minutes."
