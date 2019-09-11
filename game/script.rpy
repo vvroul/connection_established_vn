@@ -262,7 +262,6 @@ label start:
 			aki "Right here..."
 			kage "Aki. (She's amazing!!!)"
 			aki "So I guess this location has to do with the reason we're trapped here."
-
 			jump blamingMio
 
         label gouInside :
@@ -327,17 +326,6 @@ label start:
 			aki "Right here..."
 			kage "Aki. (She's amazing!!!)"
 			aki "So I guess this location has to do with the reason we're trapped here."
-			#revealing Mio
-			networker "Do you understand now? What they really want?"
-			networker "They want to attack your country from the inside"
-			networker "That's why I came here to take over your minds. Because you are the only ones that can operate these weapons correctly"
-			gou "And why you're telling us that? You are the bad guy in this situation."
-			networker "Well...not really? Am I right? MIO."
-			mio "..."
-			kana "Mio??!!"
-			
-
-
 			jump blamingMio
 
 		label akiSearched :
@@ -403,11 +391,35 @@ label start:
 			kage "Yeah, me too."
 			aki "Mio?"
 			mio "...this guy must pay for his actions..."
-
 			jump blamingMio
 
 
 		label blamingMio : 
-			
+			networker "Do you understand now? What they really want?"
+			networker "They want to attack your country from the inside"
+			networker "That's why I came here to take over your minds. Because you are the only ones that can operate these weapons correctly."
+			gou "And why you're telling us that? You are the bad guy in this situation."
+			networker "Well...not really? Am I? MIO."
+			mio "..."
+			kana "Mio??!!"
+			mio "Why? You were supposed to let them kill one another."
+			menu : 
+            "I'm not like them." :
+                jump changeOfHeart
+            "I'm not the real Networker." :
+                jump robot
+
+			changeOfHeart : 
+				networker "Besides the fact I'm generally opposite to the methods used by the Wired, I'm not the type that kills people."
+				networker "From the beginning I got assigned this mission, I didn't know what to do and I got desperate."
+				networker "Yes, I investigated these super weapons of yours. But never intended to use them against yourselves."
+				networker "But against my masters."
+				jump finale''
+
+			robot : 
+				
+				jump finale
+
+			finale :
 
     return
