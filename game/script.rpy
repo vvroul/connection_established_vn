@@ -7,6 +7,7 @@ define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, br
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
 define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed")  #powerful like a mountain
 define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed") #shadow
+define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed")
 define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 
 #define effects
@@ -414,7 +415,33 @@ label start:
 				networker "From the beginning I got assigned this mission, I didn't know what to do and I got desperate."
 				networker "Yes, I investigated these super weapons of yours. But never intended to use them against yourselves."
 				networker "But against my masters."
-				jump finale''
+				aki "Your masters?"
+				networker "Yes. The Wired have this weird system where they obey to a bunch of Digital Gods."
+				networker "In my case, I was born to follow the commands of three Gods."
+				kana "Do you really want us to believe that you communicate with deities now?"
+				networker "I don't need to try that much. You have one right in front of you."
+				mio "...Ok that's not fun anymore."
+				mio "You've said enough. YOU ARE NOTHING TO OUR SOCIETY ANYMORE."
+				mio "YOU'VE BETRAYED US."
+				mio "AND...AND YOU WILL PAY FOR THIS ACTION OF YOURS."
+				kage "How exactly he's going to pay? You can't do anything."
+				networker "Don't worry I've taken account all the possible scenarios. The worst thing he can do is banish me from the society."
+				gou "We're going to support you."
+				kana "I also believe in you, Networker."
+				mio "HM...HAHAHAHAHA"
+				mio "AS YOU'VE SAID..."
+				WGOD "I'M A GOD. I CAN DO EVERYTHING THAT I WANT."
+				WGOD "AND WHAT I WANT IS TO REDEEM YOU FROM YOUR SINS."
+				WGOD "NOW...DO YOU KNOW WHY MIO ISN'T HERE?"
+				WGOD "BECAUSE WE'VE ALREADY CAPTURED HER AND WE'RE ABOUT TO EXTRACT ALL THE INFORMATION IN HER MIND."
+				#networker turns to the Technolized team
+				networker "I know you don't completely trust me yet, and I'm sorry I trapped you but that was the only option I had."
+				networker "Now we have to fight him together."
+				aki "What's the plan?"
+				networker "We cannot kill a god but we can defy him."
+				kage "Mio's mind."
+				networker "Exactly "
+				jump finale
 
 			robot : 
 				
