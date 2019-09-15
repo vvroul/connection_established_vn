@@ -197,12 +197,9 @@ label start:
             "I searched the area." : 
                 jump akiSearched
 
-        #blamed kage first cause late but aki image, then aki for being fake but was her robot
-        #then gou because he went inside and might was captured
-
-        label kageLate : 
-			#starting to blame Kage
-            aki "Kage..."
+        #blamed kage first cause late but aki image, then aki for being fake but was her robot #then gou because he went inside and might was captured
+        label kageLate :
+            aki "Kage..." #
             aki "We all know you were late to come to our meeting place, about 45 minutes."
             kana "Indeed, Kage was really late! He is the fake one!"
             mio "The rest of us were here and waiting for him...it can't be..."
@@ -227,8 +224,7 @@ label start:
             gou "So you're saying that it's so technologically advanced that could talk to Kage without realizing himself?"
             kana "Ask Aki. She's really done a great job."
             kana "So your argument for the fake Aki is not valid."
-            networker "..."
-			#starting to blame Gou
+            networker "..." #
             aki "Gou..."
             aki "I believe you are the fake one. You entered the stage without waiting for Kage."
             aki "There is a great chance you got captured by Networker."
@@ -236,58 +232,55 @@ label start:
             gou "I don't understand."
             kage "..."
             aki "He told me before the show started, he saw you while he was coming here."
-			aki "So...anything to say about this?"
-			gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
-			gou "You know why?"
-			gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
-			gou "As you already noticed, no one other than us, was here, which was strange by itself."
-			gou "So I scanned this whole place and guess what I found...this guy..."
-			gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
-			gou "That's how he knows about us. And our minds."
-			kana "I can't believe this...this is unreal..."
-			kana "But I believe you Gou..."
-			kage "Yeah, me too."
-			aki "Mio?"
-			mio "...this guy must pay for his actions..."
-			#starting her own research
-			aki "There's something else I haven't yet mentioned."
-			aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
-			aki "But I was kind of worried when I saw it moving..."
-			aki "It followed a weird pathing which led to our country's most expensive equipment."
-			mio "I don't understand. What's the meaning of this?"
-			kage "Did you give it a specific command for that?"
-			aki "Yes..."
-			aki "To detect the nearest possible threat."
-			kana "Wait...this place is..."
-			gou "That's right."
-			aki "Right here..."
-			kage "Aki. (She's amazing!!!)"
-			aki "So I guess this location has to do with the reason we're trapped here."
-			jump blamingMio
+            aki "So...anything to say about this?"
+            gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
+            gou "You know why?"
+            gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
+            gou "As you already noticed, no one other than us, was here, which was strange by itself."
+            gou "So I scanned this whole place and guess what I found...this guy..."
+            gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
+            gou "That's how he knows about us. And our minds."
+            kana "I can't believe this...this is unreal..."
+            kana "But I believe you Gou..."
+            kage "Yeah, me too."
+            aki "Mio?"
+            mio "...this guy must pay for his actions..." #
+            aki "There's something else I haven't yet mentioned."
+            aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
+            aki "But I was kind of worried when I saw it moving..."
+            aki "It followed a weird pathing which led to our country's most expensive equipment."
+            mio "I don't understand. What's the meaning of this?"
+            kage "Did you give it a specific command for that?"
+            aki "Yes..."
+            aki "To detect the nearest possible threat."
+            kana "Wait...this place is..."
+            gou "That's right."
+            aki "Right here..."
+            kage "Aki. (She's amazing!!!)"
+            aki "So I guess this location has to do with the reason we're trapped here."
+            jump blamingMio
 
         label gouInside :
-			#starting to blame Gou
-            aki "Gou..."
+            aki "Gou..." #
             aki "I believe you are the fake one. You entered the stage without waiting for Kage."
             aki "There is a great chance you got captured by Networker."
             aki "Moreover you're trying to cover Kage all the time, because he was the only one that saw you."
             gou "I don't understand."
             kage "..."
             aki "He told me before the show started, he saw you while he was coming here."
-			gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
-			gou "You know why?"
-			gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
-			gou "As you already noticed, no one other than us, was here, which was strange by itself."
-			gou "So I scanned this whole place and guess what I found...this guy..."
-			gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
-			gou "That's how he knows about us. And our minds."
-			kana "I can't believe this...this is unreal..."
-			kana "But I believe you Gou..."
-			kage "Yeah, me too."
-			aki "Mio?"
-			mio "...this guy must pay for his actions..."
-			#starting to blame Kage
-			aki "Kage..."
+            gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
+            gou "You know why?"
+            gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
+            gou "As you already noticed, no one other than us, was here, which was strange by itself."
+            gou "So I scanned this whole place and guess what I found...this guy..."
+            gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
+            gou "That's how he knows about us. And our minds."
+            kana "I can't believe this...this is unreal..."
+            kana "But I believe you Gou..."
+            kage "Yeah, me too."
+            aki "Mio?"
+            mio "...this guy must pay for his actions..."
+            aki "Kage..." #
             aki "We all know you were late to come to our meeting place, about 45 minutes."
             kana "Indeed, Kage was really late! He is the fake one!"
             mio "The rest of us were here and waiting for him...it can't be..."
@@ -312,39 +305,36 @@ label start:
             gou "So you're saying that it's so technologically advanced that could talk to Kage without realizing himself?"
             kana "Ask Aki. She's really done a great job."
             kana "So your argument for the fake Aki is not valid."
-            networker "..."
-			#starting her own research
-			aki "There's something else I haven't yet mentioned."
-			aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
-			aki "But I was kind of worried when I saw it moving..."
-			aki "It followed a weird pathing which led to our country's most expensive equipment."
-			mio "I don't understand. What's the meaning of this?"
-			kage "Did you give it a specific command for that?"
-			aki "Yes..."
-			aki "To detect the nearest possible threat."
-			kana "Wait...this place is..."
-			gou "That's right."
-			aki "Right here..."
-			kage "Aki. (She's amazing!!!)"
-			aki "So I guess this location has to do with the reason we're trapped here."
-			jump blamingMio
+            networker "..." #
+            aki "There's something else I haven't yet mentioned."
+            aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
+            aki "But I was kind of worried when I saw it moving..."
+            aki "It followed a weird pathing which led to our country's most expensive equipment."
+            mio "I don't understand. What's the meaning of this?"
+            kage "Did you give it a specific command for that?"
+            aki "Yes..."
+            aki "To detect the nearest possible threat."
+            kana "Wait...this place is..."
+            gou "That's right."
+            aki "Right here..."
+            kage "Aki. (She's amazing!!!)"
+            aki "So I guess this location has to do with the reason we're trapped here."
+            jump blamingMio
 
-		label akiSearched :
-			#starting her own research
-			aki "There's something else I haven't yet mentioned."
-			aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
-			aki "But I was kind of worried when I saw it moving..."
-			aki "It followed a weird pathing which led to our country's most expensive equipment."
-			mio "I don't understand. What's the meaning of this?"
-			kage "Did you give it a specific command for that?"
-			aki "Yes..."
-			aki "To detect the nearest possible threat."
-			kana "Wait...this place is..."
-			gou "That's right."
-			aki "Right here..."
-			kage "Aki. (She's amazing!!!)"
-			aki "So I guess this location has to do with the reason we're trapped here."
-			#starting to blame Kage
+        label akiSearched :
+            aki "There's something else I haven't yet mentioned." #
+            aki "Indeed today is the day I activated my robot upgrade and was really proud of that accomplishment of mine."
+            aki "But I was kind of worried when I saw it moving..."
+            aki "It followed a weird pathing which led to our country's most expensive equipment."
+            mio "I don't understand. What's the meaning of this?"
+            kage "Did you give it a specific command for that?"
+            aki "Yes..."
+            aki "To detect the nearest possible threat."
+            kana "Wait...this place is..."
+            gou "That's right."
+            aki "Right here..."
+            kage "Aki. (She's amazing!!!)"
+            aki "So I guess this location has to do with the reason we're trapped here." #
             aki "Kage..."
             aki "We all know you were late to come to our meeting place, about 45 minutes."
             kana "Indeed, Kage was really late! He is the fake one!"
@@ -370,8 +360,7 @@ label start:
             gou "So you're saying that it's so technologically advanced that could talk to Kage without realizing himself?"
             kana "Ask Aki. She's really done a great job."
             kana "So your argument for the fake Aki is not valid."
-            networker "..."
-			#starting to blame Gou
+            networker "..." #
             aki "Gou..."
             aki "I believe you are the fake one. You entered the stage without waiting for Kage."
             aki "There is a great chance you got captured by Networker."
@@ -379,92 +368,96 @@ label start:
             gou "I don't understand."
             kage "..."
             aki "He told me before the show started, he saw you while he was coming here."
-			aki "So...anything to say about this?"
-			gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
-			gou "You know why?"
-			gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
-			gou "As you already noticed, no one other than us, was here, which was strange by itself."
-			gou "So I scanned this whole place and guess what I found...this guy..."
-			gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
-			gou "That's how he knows about us. And our minds."
-			kana "I can't believe this...this is unreal..."
-			kana "But I believe you Gou..."
-			kage "Yeah, me too."
-			aki "Mio?"
-			mio "...this guy must pay for his actions..."
-			jump blamingMio
+            aki "So...anything to say about this?"
+            gou "You guys...dare to call me a fake one...I was the first one to call him Networker."
+            gou "You know why?"
+            gou "Because while you all were waiting outside for your Kage, I was actuall doing my own research around this place."
+            gou "As you already noticed, no one other than us, was here, which was strange by itself."
+            gou "So I scanned this whole place and guess what I found...this guy..."
+            gou "This guy mind-controlled all the people that were invited in this event. Stole all the records..."
+            gou "That's how he knows about us. And our minds."
+            kana "I can't believe this...this is unreal..."
+            kana "But I believe you Gou..."
+            kage "Yeah, me too."
+            aki "Mio?"
+            mio "...this guy must pay for his actions..."
+            jump blamingMio
 
 
-		label blamingMio : 
-			networker "Do you understand now? What they really want?"
-			networker "They want to attack your country from the inside"
-			networker "That's why I came here to take over your minds. Because you are the only ones that can operate these weapons correctly."
-			gou "And why you're telling us that? You are the bad guy in this situation."
-			networker "Well...not really? Am I? MIO."
-			mio "..."
-			kana "Mio??!!"
-			mio "Why? You were supposed to let them kill one another."
-			menu : 
-            "I'm not like them." :
-                jump changeOfHeart
-            "I'm not the real Networker." :
-                jump robot
+        label blamingMio : 
+            networker "Do you understand now? What they really want?"
+            networker "They want to attack your country from the inside"
+            networker "That's why I came here to take over your minds. Because you are the only ones that can operate these weapons correctly."
+            gou "And why you're telling us that? You are the bad guy in this situation."
+            networker "Well...not really? Am I? MIO."
+            mio "..."
+            kana "Mio??!!"
+            mio "Why? You were supposed to let them kill one another."
+            menu : 
+                 "I'm not like them." :
+                    jump changeOfHeart
+                 "I'm not the real Networker." :
+                    jump robot
 
-			changeOfHeart : 
-				networker "Besides the fact I'm generally opposite to the methods used by the Wired, I'm not the type that kills people."
-				networker "From the beginning I got assigned this mission, I didn't know what to do and I got desperate."
-				networker "Yes, I investigated these super weapons of yours. But never intended to use them against yourselves."
-				networker "But against my masters."
-				aki "Your masters?"
-				networker "Yes. The Wired have this weird system where they obey to a bunch of Digital Gods."
-				networker "In my case, I was born to follow the commands of three Gods."
-				kana "Do you really want us to believe that you communicate with deities now?"
-				networker "I don't need to try that much. You have one right in front of you."
-				mio "...Ok that's not fun anymore."
-				mio "You've said enough. YOU ARE NOTHING TO OUR SOCIETY ANYMORE."
-				mio "YOU'VE BETRAYED US."
-				mio "AND...AND YOU WILL PAY FOR THIS ACTION OF YOURS."
-				kage "How exactly he's going to pay? You can't do anything."
-				networker "Don't worry I've taken account all the possible scenarios. The worst thing he can do is banish me from the society."
-				gou "We're going to support you."
-				kana "I also believe in you, Networker."
-				mio "HM...HAHAHAHAHA"
-				mio "AS YOU'VE SAID..."
-				WGOD "I'M A GOD. I CAN DO EVERYTHING THAT I WANT."
-				WGOD "AND WHAT I WANT IS TO REDEEM YOU FROM YOUR SINS."
-				WGOD "NOW...DO YOU KNOW WHY MIO ISN'T HERE?"
-				WGOD "BECAUSE WE'VE ALREADY CAPTURED HER AND WE'RE ABOUT TO EXTRACT ALL THE INFORMATION IN HER MIND."
-				#networker turns to the Technolized team
-				networker "I know you don't completely trust me yet, and I'm sorry I trapped you but that was the only option I had."
-				networker "Now we have to fight him together."
-				aki "What's the plan?"
-				networker "We cannot kill a god but we can defy him."
-				kage "Mio's mind."
-				networker "Exactly. We have to scan for Mio with the help of one of these systems you've got here."
-				networker "She must be somewhere here."
-				gou "We have her so close? That'd be a mistake and a possible risk for their own temporaty existence."
-				networker "I think you answered it yourself. The range we can control a mind isn't very long."
-				aki "But there must be something else right? I can't be such a limited skill."
-				networker "Well yes. The problem is that her body becomes invinsible when is taken over."
-				networker "And that's why we have to use your technology."
-				kana "Yes but what we do after we find the body? Do we...kill her...?"
-				kage "Networker...is there any chance to do a reverse mind control?"
-				kage "I want to try to take over his mind..."
-				aki "Kage...what are you actually thinking?"
-				networker "Yes...this is possible but it comes with a sacrifice. The user loses its own mind completely when he tries to overtake a fake mind."
-				networker "More so...if that's a GOD's mind...you'll take double the damage."
-				kage "I... I don't care. I want us to try it. I know that the scanning weapon has a long charge time once you use it the first time."
-				kage "But then again, if we find her and realise her no one guaranties us that we can save her."
-				kage "So please Networker...enchance me with that skill of yours."
-				gou "Fool..."
-				networker "If I agree...how do I know that you're not going to overtake me?"
-				unknown "He's not going to..."
-				jump finale
+            label changeOfHeart : 
+                networker "Besides the fact I'm generally opposite to the methods used by the Wired, I'm not the type that kills people."
+                networker "From the beginning I got assigned this mission, I didn't know what to do and I got desperate."
+                networker "Yes, I investigated these super weapons of yours. But never intended to use them against yourselves."
+                networker "But against my masters."
+                aki "Your masters?"
+                networker "Yes. The Wired have this weird system where they obey to a bunch of Digital Gods."
+                networker "In my case, I was born to follow the commands of three Gods."
+                kana "Do you really want us to believe that you communicate with deities now?"
+                networker "I don't need to try that much. You have one right in front of you."
+                mio "...Ok that's not fun anymore."
+                mio "You've said enough. YOU ARE NOTHING TO OUR SOCIETY ANYMORE."
+                mio "YOU'VE BETRAYED US."
+                mio "AND...AND YOU WILL PAY FOR THIS ACTION OF YOURS."
+                kage "How exactly he's going to pay? You can't do anything."
+                networker "Don't worry I've taken account all the possible scenarios. The worst thing he can do is banish me from the society."
+                gou "We're going to support you."
+                kana "I also believe in you, Networker."
+                mio "HM...HAHAHAHAHA"
+                mio "AS YOU'VE SAID..."
+                WGOD "I'M A GOD. I CAN DO EVERYTHING THAT I WANT."
+                WGOD "AND WHAT I WANT IS TO REDEEM YOU FROM YOUR SINS."
+                WGOD "NOW...DO YOU KNOW WHY MIO ISN'T HERE?"
+                WGOD "BECAUSE WE'VE ALREADY CAPTURED HER AND WE'RE ABOUT TO EXTRACT ALL THE INFORMATION IN HER MIND." #
+                networker "I know you don't completely trust me yet, and I'm sorry I trapped you but that was the only option I had."
+                networker "Now we have to fight him together."
+                aki "What's the plan?"
+                networker "We cannot kill a god but we can defy him."
+                kage "Mio's mind."
+                networker "Exactly. We have to scan for Mio with the help of one of these systems you've got here."
+                networker "She must be somewhere here."
+                gou "We have her so close? That'd be a mistake and a possible risk for their own temporaty existence."
+                networker "I think you answered it yourself. The range we can control a mind isn't very long."
+                aki "But there must be something else right? I can't be such a limited skill."
+                networker "Well yes. The problem is that her body becomes invinsible when is taken over."
+                networker "And that's why we have to use your technology."
+                kana "Yes but what we do after we find the body? Do we...kill her...?"
+                kage "Networker...is there any chance to do a reverse mind control?"
+                kage "I want to try to take over his mind..."
+                aki "Kage...what are you actually thinking?"
+                networker "Yes...this is possible but it comes with a sacrifice. The user loses its own mind completely when he tries to overtake a fake mind."
+                networker "More so...if that's a GOD's mind...you'll take double the damage."
+                kage "I... I don't care. I want us to try it. I know that the scanning weapon has a long charge time once you use it the first time."
+                kage "But then again, if we find her and realise her no one guaranties us that we can save her."
+                kage "So please Networker...enchance me with that skill of yours."
+                gou "Fool..."
+                networker "If I agree...how do I know that you're not going to overtake me?"
+                unknown "He's not going to..."
+                scene black with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
+                kana "Who's there? Are you an evil GOD that wants to overtake us as well?"
 
-			robot : 
-				
-				jump finale
+                jump finale
 
-			finale :
+            label robot : 
+                
+                jump finale
+
+            label finale :
 
     return
