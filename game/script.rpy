@@ -451,7 +451,29 @@ label start:
                 $ renpy.pause(1, hard=True)
                 window show dissolve
                 kana "Who's there? Are you an evil GOD that wants to overtake us as well?"
-
+				mum "What? A GOD? That's nonsense. If a GOD existed then my husband would be alive right now."
+				mum "And kage would follow his dream instead of...helping his friends I guess, which is awesome."
+				mum "But I want him to be happy and all. And I know he's past that THE DEATH OF MY FATHER thing."
+				mum "And..."
+				kage "MUUUUUUUM!!! WHAT ARE YOU DOING HERE?"
+				mum "What do you mean what I'm doing here, I came to pick you up from the show as we had agreed."
+				aki "..."
+				mum "I've heard it all."
+				mum "He's not going to overtake your mind."
+				mum "And I'm saying that with absolute awareness of what that GOD thing is."
+				networker "What do you mean with absolute awareness?"
+				kage "Mum?"
+				aki "You've seen again one of these GODs haven't you?"
+				mum "Yes Aki, love."
+				mum "My...husband...Your father...Kage...wasn't killed in a car accident."
+				kana "Oh my..."
+				kage "What do you mean Mum? Were you lying to all these years?"
+				kage "I mean, were you ever going to tell me the truth if this GOD wasn't about to appear?"
+				mum "I'm sorry honey. Really, I'm sorry."
+				mum "But I couldn't explain that how your father fought a GOD and..."
+				mum "You wouldn't believe me."
+				gou "Well, she has a point."
+				gou "Hell we don't even know what that guy is capable of...even if he's all words 'till now."
                 jump finale
 
             label robot : 
