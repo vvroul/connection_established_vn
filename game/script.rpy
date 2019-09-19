@@ -474,6 +474,21 @@ label start:
 				mum "You wouldn't believe me."
 				gou "Well, she has a point."
 				gou "Hell we don't even know what that guy is capable of...even if he's all words 'till now."
+                aki "I can understand what's happening here but I think we have a more important problem."
+                aki "We have to find out what are his weaknesses."
+                kana "If he has any..."
+                networker "He's not a real GOD. As I've mentioned before he has simply overtaken Mio."
+                kana "The weapon. We have to find her as soon as possible."
+                WGOD "I'VE BEEN LISTENING TO YOU WHINING ALL THIS TIME AND TRY TO FIND A WAY TO DEFEAT ME."
+                WGOD "JUST LOOK AT WHAT'S HAPPENING OUTSIDE. THE TIME YOU MORONS WERE SOLVING YOUR PERSONAL ISSUES, I WAS PREPARING FOR A FIGHT."
+                #scenery with fights and overtaken minds
+                mum "Kids...go away, you don't want to fight him."
+                kage "I'm still going with my decision, I strongly believe we can do it. NETWORKEEEER!!"
+                networker "If you insist..."
+                networker "I will overtake you without completely controlling your mind."
+                networker "You'll still have some senses so use them to trigger my overtake skill on him."
+                kage "Ok we've got this!!"
+                mum "Honey...your father wanted to protect me and...died trying the same thing."
                 jump finale
 
             label robot : 
