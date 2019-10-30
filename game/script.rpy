@@ -2,6 +2,7 @@
 define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed")
+define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
@@ -489,6 +490,35 @@ label start:
                 networker "You'll still have some senses so use them to trigger my overtake skill on him."
                 kage "Ok we've got this!!"
                 mum "Honey...your father wanted to protect me and...died trying the same thing."
+                kage "Mum. I understand now. I understand everything."
+                kage "I wouldn't have the courage to do this right now, so...thank you for keeping it a secret."
+                mum "Kage...TEACH HIM A LESSON."
+                kage "Let's do this..."
+                networker "..."
+                #screen turns red
+                kage "Ahhhhhhhhhhhhhhh.."
+                networker "It's alright, you can open your eyes."
+                kage "Ha...hahahaha...I live!"
+                kana "Yes, we can do this!"
+                aki "Kage!!"
+                kage "Wait guys...is that...I see Mio over there."
+                networker "Yes you can see her because of my abilities."
+                networker "But enough talk for now. Activate my OVERTAKE ability on him."
+                kage "I'll try."
+                WGOD "I'VE NOW GATHERED ALL OF MY FORCES. MARCH MY ARMY. ELIMINATE THEM."
+                networker "MIO STOP"
+                #screen turns white
+                mio "Wh...what happened? My eyes hurt..."
+                kana "Guys...hurry, I see Mio over there..."
+                kana "And Kage!"
+                mio "Uhh...Kana..."
+                kana "Wake up Mio, wake up!"
+                gou "Did Kage actually do it? Did he win this GOD?"
+                aki "Kage...please, say something..."
+                networker "He's alright. The OVERTAKE spell has drained all of his energy. He needs to rest for now."
+                networker "I guess you already knew that...right Aya...?"
+                aya "Yes, my friend...thank you very much for your help."
+                networker "Your son's bravery saved us all."
                 jump finale
 
             label robot : 
