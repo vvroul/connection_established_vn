@@ -519,12 +519,26 @@ label start:
                 networker "I guess you already knew that...right Aya...?"
                 aya "Yes, my friend...thank you very much for your help."
                 networker "Your son's bravery saved us all."
+                aya "We would all be lost if it wasn't for your decision though. So thanks again."
+                mio "Kana...I was going to ask you...did you get my message?"
+                kana "I've got it..."
+                kana "I love you too...sister..."
                 jump finale
 
             label robot : 
-                
+                networker "Because I'm not the original networker."
+                networker "I'm a robot made by Aya Fukuda."
+                gou "Fukuda...wait...that's..."
+                aki "Kage's mother...? Aya?"
+                kage "Relax guys my mom didn't even want to study further in order to build something this extreme."
+                kage "I bet this is some of my aunt's doings."
+                gou "But then again...what are you doing here..."
+                kana "Indeed, I mean had your aunt predicted this whole situation, that programmed her robot to come and protect us?"
                 jump finale
 
             label finale :
+                #Black screen
+                unknown "The end."
+                unknown "Thanks for playing."
 
     return
