@@ -1,5 +1,6 @@
 ﻿#define characters
 define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
+define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed")
 define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed")
@@ -533,7 +534,19 @@ label start:
                 kage "Relax guys my mom didn't even want to study further in order to build something this extreme."
                 kage "I bet this is some of my aunt's doings."
                 gou "But then again...what are you doing here..."
-                kana "Indeed, I mean had your aunt predicted this whole situation, that programmed her robot to come and protect us?"
+                kana "Indeed, I mean had your aunt predicted this whole situation, that programmed her robot to come here?"
+                aki "Kage...does your mom know about the today's event?"
+                kage "Yes she does...but then again...that makes no sense..."
+                robot "Kage...My creator has spoken very much about you."
+                robot "She commanded me to protect you, and that's what I'm going to do...."
+                robot "You see...your friend that you call Mio, over there...is a vicious villain that wants to destroy our city. And overtake our minds."
+                kana "What? Now way Mio is such a monster..."
+                mio "...Ok that's not fun anymore."
+                mio "I'm not just a pathetic monster..."
+                WGOD "I'M A WIRED GOD."
+                WGOD "AND ALL I WANT IS TO REDEEM YOU FROM YOUR SINS."
+                WGOD "NOW...DO YOU KNOW WHY MIO ISN'T HERE?"
+                WGOD "BECAUSE WE'VE ALREADY CAPTURED HER AND WE'RE ABOUT TO EXTRACT ALL THE INFORMATION IN HER MIND." #
                 jump finale
 
             label finale :
