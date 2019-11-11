@@ -598,6 +598,24 @@ label start:
                 kana "Just get it done!"
                 mum "Alright let's do this!"
                 all "ENHANCE!!!!!"
+                 #screen turns white
+                mio "Wh...what happened? My eyes hurt..."
+                kana "Guys...hurry, I see Mio over there..."
+                kana "And Kage!"
+                mio "Uhh...Kana..."
+                kana "Wake up Mio, wake up!"
+                gou "Did Kage actually do it? Did he win this GOD?"
+                aki "Kage...please, say something..."
+                robot "He's alright...but..."
+                gou "Aya...Is that...you?"
+                aya "Yes...we changed bodies and souls with the robot...that was the only option I had to destroy the GOD..."
+                aya "And Kage already knew this was going to happen..."
+                aya "He knew this was the only choice. In the middle of the fight he tried to embody with the robot's soul, before me."
+                aya "That's why he's so tired right now."
+                aya "And we wouldn't have done it without his precious help..."
+                mio "Kana...I was going to ask you...did you get my message?"
+                kana "I've got it..."
+                kana "I love you too...sister..."
                 jump finale
 
             label finale :
