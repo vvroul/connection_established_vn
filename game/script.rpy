@@ -41,7 +41,7 @@ label start:
     "You know what to do right?"
     "Unless you want us to repeat the mission again."
     unknown "No, sir. Everything's clear."
-    "Good. Now...go. Do not dissapoint us."
+    "Good. Now, go. Don't dissapoint us."
     unknown "Yes, sir."
     scene black with Pause(1)
     $ renpy.pause(1, hard=True)
@@ -51,12 +51,12 @@ label start:
     unknown "I haven't been in this planet since the Initial Incident."
     unknown "Their systems seem to work well. Maybe better than ours."
     unknown "They're going to need three of them."
-    unknown "Let's hope this will work."
+    unknown "Let's hope this works."
     $ renpy.pause(1, hard=True)
     scene bg home_bg with fade
     $ renpy.pause(1.0)
     window show dissolve
-    mio "Good morning, I'm Mio, Kana's friend. Is she home?"
+    mio "Good morning, I'm Mio, Kana's friend. Is she home at the moment?"
     ai "Hello Mio. Unfortunately, she left an hour ago. Would you like to leave a message for her?"
     mio "Oh, I see."
     mio "Yes please, tell her we have an extra ticket for the {color=#FE2E64} Epic Dinosaur Battle {/color} tonight, so she can join us."
@@ -69,16 +69,16 @@ label start:
         "Yes..I... I really miss the days we were having fun together." :
             $miss_times_together = True
             $no_thats_all = False
-    ai "Alright, ending the call in 3...2..."
-    mio "Hope she'll come tonight..."
+    ai "Alright, ending the call in 3, 2,"
+    mio "Hope she'll come tonight."
     jump tv_news
 
     label tv_news :
         scene black with Pause(1)
         $ renpy.pause(1, hard=True)
         "A dead body was found yesterday in a car accident."
-        "The camera which captured the event reported that the man crashed all by himself..."
-        "Dear God Danny..."
+        "The camera which captured the event reported that the man crashed all by himself."
+        "Dear God Danny."
         "*blink*"
         kage "Hey wait, why did you turn that off?"
         mum  "..."
@@ -88,7 +88,7 @@ label start:
         mum "I heard that your friends are going to the big battle show today."
         mum "Why don't you join them?"
         kage "I don't know. I have a feeling this will be really boring."
-        mum "You're really interested in this technology, are you?"
+        mum "You're really interested in this technology, don't you?"
         kage "Yeah, how do you..."
         mum "I'm your mother. I can easily tell."
         menu : 
@@ -99,33 +99,33 @@ label start:
 
     label buildMachine : 
         kage "I want to build a new machine based on this feature. The ability to counter such a vast scale of attacks."
-        kage "It's so intriguing..."
+        kage "It's so intriguing."
         kage "I'm going!"
         mum "Better hurry up, honey."
         kage "You're right! See ya, mum. Thank you!"
-        mum "Kage..."
+        mum "Kage."
         kage "What now?"
         mum "I love you."
-        kage "Me too mum. Me too..."
+        kage "Me too mum. Me too."
         jump timeForShow
 
     label afraidMoving : 
         kage "I really want to invest time on this feature."
         kage "But, I'm afraid I'll fail miserably."
-        kage "There's no way I'm going to succeed all by myself. I..."
+        kage "There's no way I'm going to succeed all by myself."
         mum  "What about asking for Aki's help?"
         kage "Aki...she's not into machines."
         mum  "Oh really? Then, how do you explain this?"
-        kage "Wow...Had no idea...This changes evetything."
-        kage "Have to find her, do you know if she's also going to the show?"
+        kage "Wow! Had no idea! This changes evetything."
+        kage "Have to find her, do you know if she's also coming to the show?"
         mum  "Only one way to know."
         kage "I'm going!"
         mum "Better hurry up, honey."
         kage "See ya, mum. Thank you!"
-        mum "Kage..."
+        mum "Kage."
         kage "What now?"
         mum "I love you."
-        kage "Me too mum. Me too..."
+        kage "Me too mum. Me too."
         jump timeForShow
 
 
