@@ -513,10 +513,12 @@ label start:
                 aya "Yes, my friend. Thank you very much for your help."
                 networker "Your son's bravery saved us all."
                 aya "We would all be lost if it wasn't for your decision though. So thanks again."
-                mio "Kana. I was going to ask you, did you get my message?"
-                kana "I got it."
-                kana "I love you too. Sister..."
-                jump finale
+                if ($no_thats_all == True) : 
+                    mio "Kana. I was going to ask you, did you get my message?"
+                    kana "I got it."
+                    kana "I love you too. Sister..."
+                else 
+                    jump finale
 
             label robot :
                 networker "Because I'm not the original networker."
@@ -609,9 +611,12 @@ label start:
                 aya "He knew this was the only choice. In the middle of the fight he tried to embody with the robot's soul, before me."
                 aya "That's why he's so tired right now."
                 aya "And we wouldn't have done it without his precious help."
-                mio "Kana. I was going to ask you. Did you get my message?"
-                kana "I got it."
-                kana "I love you too. Sister..."
+                if ($no_thats_all == True) : 
+                    mio "Kana. I was going to ask you, did you get my message?"
+                    kana "I got it."
+                    kana "I love you too. Sister..."
+                else 
+                    jump finale
                 jump finale
 
             label finale :
