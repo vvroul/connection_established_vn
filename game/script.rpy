@@ -5,7 +5,7 @@ define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed")
 define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
-define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed")  #clear, bright
+define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed") #summer, flower
 define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed")  #powerful like a mountain
 define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed") #shadow
@@ -31,6 +31,7 @@ image bg internet_bg = "background_internet.png"
 
 #define side images
 image side mio = "mio.png"
+image side aki = "aki.png"
 
 label start:
     scene bg internet_bg with fade
