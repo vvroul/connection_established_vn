@@ -8,7 +8,7 @@ define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fi
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed", image="kana") #summer, flower
 define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed", image="gou")  #powerful like a mountain
-define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed") #shadow
+define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed", image="kage") #shadow
 define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed")
 define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 
@@ -35,6 +35,7 @@ image side aki = "aki.png"
 image side kana = "kana.png"
 image side mom = "mom.png"
 image side gou = "gou.png"
+image side kage = "kage.png"
 
 label start:
     scene bg internet_bg with fade
