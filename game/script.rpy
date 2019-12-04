@@ -1,6 +1,6 @@
 ﻿#define characters
 define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
-define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed")
+define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed", image="robot")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed", image="mom")
 define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed")
@@ -36,6 +36,7 @@ image side kana = "kana.png"
 image side mom = "mom.png"
 image side gou = "gou.png"
 image side kage = "kage.png"
+image side robot = "robot.png"
 
 label start:
     scene bg internet_bg with fade
