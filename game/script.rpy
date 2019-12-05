@@ -3,7 +3,7 @@ define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
 define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed", image="robot")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed", image="mom")
-define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed")
+define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed", image="aya")
 define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed", image="kana") #summer, flower
@@ -37,6 +37,7 @@ image side mom = "mom.png"
 image side gou = "gou.png"
 image side kage = "kage.png"
 image side robot = "robot.png"
+image side aya = "aya.png"
 
 label start:
     scene bg internet_bg with fade
