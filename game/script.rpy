@@ -11,6 +11,8 @@ define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed", image="gou"
 define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed", image="kage") #shadow
 define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed")
 define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
+define all = Character("all", ctc="ctc_blink", ctc_position="fixed")
+define developer = Character("developer", ctc="ctc_blink", ctc_position="fixed")
 
 #define effects
 image ctc_blink:
@@ -520,7 +522,7 @@ label start:
                 aya "Yes, my friend. Thank you very much for your help."
                 networker "Your son's bravery saved us all."
                 aya "We would all be lost if it wasn't for your decision though. So thanks again."
-                if ($no_thats_all == True) : 
+                if no_thats_all == False : 
                     mio "Kana. I was going to ask you, did you get my message?"
                     kana "I got it."
                     kana "I love you too. Sister..."
@@ -618,7 +620,7 @@ label start:
                 aya "He knew this was the only choice. In the middle of the fight he tried to embody with the robot's soul, before me."
                 aya "That's why he's so tired right now."
                 aya "And we wouldn't have done it without his precious help."
-                if ($no_thats_all == True) : 
+                if no_thats_all == False : 
                     mio "Kana. I was going to ask you, did you get my message?"
                     kana "I got it."
                     kana "I love you too. Sister..."
@@ -628,7 +630,7 @@ label start:
 
             label finale :
                 #Black screen
-                unknown "The end."
-                unknown "Thanks for playing."
+                developer "The end."
+                developer "Thanks for playing."
 
     return
