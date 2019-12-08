@@ -1,5 +1,5 @@
 ﻿#define characters
-define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed")
+define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed", image="networker")
 define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed", image="robot")
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed", image="mom")
@@ -40,6 +40,7 @@ image side gou = "gou.png"
 image side kage = "kage.png"
 image side robot = "robot.png"
 image side aya = "aya.png"
+image side networker = "networker.png"
 
 label start:
     scene bg internet_bg with fade
@@ -526,6 +527,7 @@ label start:
                     mio "Kana. I was going to ask you, did you get my message?"
                     kana "I got it."
                     kana "I love you too. Sister..."
+                    jump finale
                 else :
                     jump finale
 
@@ -624,6 +626,7 @@ label start:
                     mio "Kana. I was going to ask you, did you get my message?"
                     kana "I got it."
                     kana "I love you too. Sister..."
+                    jump finale
                 else :
                     jump finale
                 jump finale
