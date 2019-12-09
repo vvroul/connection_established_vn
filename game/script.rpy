@@ -9,7 +9,7 @@ define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki"
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed", image="kana") #summer, flower
 define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed", image="gou")  #powerful like a mountain
 define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed", image="kage") #shadow
-define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed")
+define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed", image="WGOD")
 define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 define all = Character("all", ctc="ctc_blink", ctc_position="fixed")
 define developer = Character("developer", ctc="ctc_blink", ctc_position="fixed")
@@ -41,6 +41,7 @@ image side kage = "kage.png"
 image side robot = "robot.png"
 image side aya = "aya.png"
 image side networker = "networker.png"
+image side WGOD = "WGOD.png"
 
 label start:
     scene bg internet_bg with fade
