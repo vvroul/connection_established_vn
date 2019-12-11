@@ -29,6 +29,7 @@ define flash = Fade(0.1, 0.0, 0.3, color="#fff")
 image bg black_bg = "black_bg.png"
 image bg dino_bg = "dino.png"
 image bg home_bg = "home.png"
+image bg kagehouse = "kagehouse.png"
 image bg internet_bg = "background_internet.png"
 
 #define side images
@@ -85,8 +86,10 @@ label start:
     jump tv_news
 
     label tv_news :
-        scene black with Pause(1)
         $ renpy.pause(1, hard=True)
+        scene bg kagehouse with fade
+        $ renpy.pause(1.0)
+        window show dissolve
         "A dead body was found yesterday in a car accident."
         "The camera which captured the event reported that the man crashed all by himself."
         "Dear God Danny."
