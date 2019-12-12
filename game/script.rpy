@@ -29,6 +29,7 @@ define flash = Fade(0.1, 0.0, 0.3, color="#fff")
 image bg black_bg = "black_bg.png"
 image bg dino_bg = "dino.png"
 image bg home_bg = "home.png"
+image bg arena_outside = "arena_outside.png"
 image bg kagehouse = "kagehouse.png"
 image bg internet_bg = "background_internet.png"
 
@@ -144,6 +145,10 @@ label start:
 
 
     label timeForShow : 
+        $ renpy.pause(1, hard=True)
+        scene bg arena_outside with fade
+        $ renpy.pause(1.0)
+        window show dissolve
         gou "Bet he's not coming after all."
         aki "Wait."
         aki "He called me and said he'll be here in a minute."
