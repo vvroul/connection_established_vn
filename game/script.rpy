@@ -30,6 +30,7 @@ image bg black_bg = "black_bg.png"
 image bg dino_bg = "dino.png"
 image bg home_bg = "home.png"
 image bg arena_outside = "arena_outside.png"
+image bg arena_inside = "arena_inside.png"
 image bg kagehouse = "kagehouse.png"
 image bg internet_bg = "background_internet.png"
 
@@ -160,6 +161,10 @@ label start:
         kage "Hey, guys, thanks a lot for waiting."
         kana "You're late."
         kage "I know. I'll explain later, let's not waste our time."
+        $ renpy.pause(1, hard=True)
+        scene bg arena_inside with fade
+        $ renpy.pause(1.0)
+        window show dissolve
         mio "Seems like we're the first getting here."
         aki "That's weird."
         aki  "Many tickets were listed as closed."
