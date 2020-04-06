@@ -31,6 +31,7 @@ image bg dino_bg = "dino.png"
 image bg home_bg = "home.png"
 image bg arena_outside = "arena_outside.png"
 image bg arena_inside = "arena_inside.png"
+image bg arena_locked = "arena_locked.png"
 image bg kagehouse = "kagehouse.png"
 image bg internet_bg = "background_internet.png"
 
@@ -403,6 +404,10 @@ label start:
 
 
         label blamingMio : 
+            $ renpy.pause(0.5, hard=True)
+            scene bg arena_locked with fade
+            $ renpy.pause(0.5)
+            window show dissolve
             networker "Do you understand now? What they really want?"
             networker "They want to attack your country from the inside"
             networker "That's why I came here to take over your minds. Because you are the only ones that can operate these weapons correctly."
