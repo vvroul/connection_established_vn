@@ -472,6 +472,7 @@ label start:
                 scene black with Pause(1)
                 $ renpy.pause(1, hard=True)
                 window show dissolve
+                #scenery change
                 kana "Who's there? Are you an evil GOD that wants to overtake us as well?"
                 mum "What? A GOD? That's nonsense. If a GOD existed then my husband would be alive right now."
                 mum "And kage would follow his dream instead of, helping his friends I guess, which is awesome."
@@ -572,6 +573,10 @@ label start:
                 WGOD "NOW. DO YOU KNOW WHY MIO ISN'T HERE?"
                 WGOD "BECAUSE WE'VE ALREADY CAPTURED HER AND WE'RE ABOUT TO EXTRACT ALL THE INFORMATION IN HER MIND." 
                 unknown "Sounds pathetic to me."
+                scene black with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
+                #scenery change
                 kana "Who's there? Are you an evil GOD as well"
                 mum "What? A GOD? That's nonsense. If a GOD existed then my husband would be alive right now."
                 mum "And kage would follow his dream instead of helping his friends I guess, which is awesome."
