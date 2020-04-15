@@ -27,6 +27,8 @@ define flash = Fade(0.1, 0.0, 0.3, color="#fff")
 
 #define bgs
 image bg black_bg = "black_bg.png"
+image bg red = "red_bg.png"
+image bg white = "white_bg.png"
 image bg dino_bg = "dino.png"
 image bg home_bg = "home.png"
 image bg arena_outside = "arena_outside.png"
