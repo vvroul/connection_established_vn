@@ -523,7 +523,9 @@ label start:
                 kage "I wouldn't have the courage to do this right now, so, thank you for keeping it a secret."
                 mum "Kage. TEACH HIM A LESSON."
                 kage "Let's do this."
-                #screen turns red
+                scene red with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
                 kage "Ahhhhhhhhhhhhhhh.."
                 networker "It's alright, you can open your eyes."
                 kage "I live!"
@@ -534,7 +536,9 @@ label start:
                 kage "I'll try."
                 WGOD "I'VE NOW GATHERED ALL OF MY FORCES. MARCH MY ARMY. ELIMINATE THEM."
                 networker "MIO STOP"
-                #screen turns white
+                scene white with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
                 mio "What happened? My eyes hurt."
                 kana "Guys hurry, I see Mio over there"
                 kana "And Kage!"
@@ -634,7 +638,9 @@ label start:
                 kana "Just get it done!"
                 mum "Alright let's do this!"
                 all "ENHANCE!"
-                 #screen turns white
+                scene white with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
                 mio "What happened? My eyes hurt."
                 kana "Guys, hurry, I see Mio over there."
                 kana "And Kage!"
