@@ -4,7 +4,7 @@ define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed", image="
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
 define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed", image="mom")
 define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed", image="aya")
-define mio = Character("Mio", color="#FA5858", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
+define mio = Character("Mio", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
 define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki")  #clear, bright
 define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed", image="kana") #summer, flower
 define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed", image="gou")  #powerful like a mountain
