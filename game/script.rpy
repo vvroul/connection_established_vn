@@ -1,15 +1,71 @@
-﻿#define characters
-define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed", image="networker")
-define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed", image="robot")
+﻿init python:
+    def beep1(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep1.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep2(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep2.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep3(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep3.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep4(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep4.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep5(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep5.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep6(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep6.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep7(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep7.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep8(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep8.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+    def beep9(event, **kwargs):
+        if event == "show":
+            renpy.music.play("beep9.ogg", channel="sound", loop=True)
+        elif event == "slow_done" or event == "end":
+            renpy.music.stop(channel="sound")
+
+
+#define characters
+define networker = Character("Networker", ctc="ctc_blink", ctc_position="fixed", image="networker", callback=beep1)
+define robot = Character("Robot", ctc="ctc_blink", ctc_position="fixed", image="robot", callback=beep1)
 define ai = Character("AI", ctc="ctc_blink", ctc_position="fixed")
-define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed", image="mom")
-define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed", image="aya")
-define mio = Character("Mio", ctc="ctc_blink", ctc_position="fixed", image="mio")  #cherry blossom, beautiful
-define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki")  #clear, bright
-define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed", image="kana") #summer, flower
-define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed", image="gou")  #powerful like a mountain
-define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed", image="kage") #shadow
-define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed", image="WGOD")
+define mum = Character("Mom", ctc="ctc_blink", ctc_position="fixed", image="mom", callback=beep2)
+define aya = Character("Aya", ctc="ctc_blink", ctc_position="fixed", image="aya", callback=beep2)
+define mio = Character("Mio", ctc="ctc_blink", ctc_position="fixed", image="mio", callback=beep3)  #cherry blossom, beautiful
+define aki = Character("Aki", ctc="ctc_blink", ctc_position="fixed", image="aki", callback=beep4)  #clear, bright
+define kana = Character("Kana", ctc="ctc_blink", ctc_position="fixed", image="kana", callback=beep5) #summer, flower
+define gou = Character("Gou", ctc="ctc_blink", ctc_position="fixed", image="gou", callback=beep6)  #powerful like a mountain
+define kage = Character("Kage", ctc="ctc_blink", ctc_position="fixed", image="kage", callback=beep7) #shadow
+define WGOD = Character("WIRED GOD", ctc="ctc_blink", ctc_position="fixed", image="WGOD", callback=beep8)
 define unknown = Character("???", ctc="ctc_blink", ctc_position="fixed")
 define all = Character("all", ctc="ctc_blink", ctc_position="fixed")
 define developer = Character("developer", ctc="ctc_blink", ctc_position="fixed")
@@ -36,6 +92,7 @@ image bg arena_inside = "arena_inside.png"
 image bg arena_locked = "arena_locked.png"
 image bg kagehouse = "kagehouse.png"
 image bg internet_bg = "background_internet.png"
+image bg fight_outside = 'fight_outside.png'
 
 #define side images
 image side mio = "mio.png"
@@ -48,6 +105,7 @@ image side robot = "robot.png"
 image side aya = "aya.png"
 image side networker = "networker.png"
 image side WGOD = "WGOD.png"
+
 
 label start:
     scene bg internet_bg with fade
@@ -178,9 +236,7 @@ label start:
         unknown "Don't be afraid as they're trained to not attack to anyone else than their opponent." 
         kana "Gou, I'm scared."
         gou "Don't be afraid Kana, it's gonna be alright." 
-        #show beasts
         unknown "And now, get prepared for some fight." 
-        #lights off. 
         unknown "3, 2,"
         unknown "Or..."
         unknown "Not."
@@ -474,7 +530,6 @@ label start:
                 scene black with Pause(1)
                 $ renpy.pause(1, hard=True)
                 window show dissolve
-                #scenery change
                 kana "Who's there? Are you an evil GOD that wants to overtake us as well?"
                 mum "What? A GOD? That's nonsense. If a GOD existed then my husband would be alive right now."
                 mum "And kage would follow his dream instead of, helping his friends I guess, which is awesome."
@@ -511,7 +566,9 @@ label start:
                 kana "The weapon. We have to find her as soon as possible."
                 WGOD "I'VE BEEN LISTENING TO YOU WHINING ALL THIS TIME AND TRY TO FIND A WAY TO DEFEAT ME."
                 WGOD "JUST LOOK AT WHAT'S HAPPENING OUTSIDE. THE TIME YOU MORONS WERE SOLVING YOUR PERSONAL ISSUES, I WAS PREPARING FOR A FIGHT."
-                #scenery with fights and overtaken minds
+                scene fight_outside with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
                 mum "Kids! Go away, you don't want to fight him."
                 kage "I'm still going with my decision, I strongly believe we can do it. NETWORKER!"
                 networker "If you insist."
@@ -582,7 +639,6 @@ label start:
                 scene black with Pause(1)
                 $ renpy.pause(1, hard=True)
                 window show dissolve
-                #scenery change
                 kana "Who's there? Are you an evil GOD as well"
                 mum "What? A GOD? That's nonsense. If a GOD existed then my husband would be alive right now."
                 mum "And kage would follow his dream instead of helping his friends I guess, which is awesome."
@@ -623,6 +679,9 @@ label start:
                 mum "Don't worry about me kids, I will survive this."
                 WGOD "I'VE BEEN LISTENING TO YOU WHINING ALL THIS TIME AND TRY TO FIND A WAY TO DEFEAT ME."
                 WGOD "JUST LOOK AT WHAT'S HAPPENING OUTSIDE. THE TIME YOU MORONS WERE SOLVING YOUR PERSONAL ISSUES, I WAS PREPARING FOR A FIGHT."
+                scene fight_outside with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
                 mum "We have to hurry."
                 gou "Wait! Aya."
                 mum "Huh? How do you know my name? Oh, the robot told you."
@@ -664,7 +723,9 @@ label start:
                 jump finale
 
             label finale :
-                #Black screen
+                scene black with Pause(1)
+                $ renpy.pause(1, hard=True)
+                window show dissolve
                 developer "The end."
                 developer "Thanks for playing."
 
